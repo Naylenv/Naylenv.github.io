@@ -97,7 +97,7 @@ avatar:
 index_img:
 
 # if the banner of page not setting, it will show the top_img
-default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
+default_top_img: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813184728.png
 
 # the banner image of archive page
 archive_img:
@@ -126,8 +126,12 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
-  default_cover:
-    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+  default_cover: 
+    - https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813184340.png
+    - https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813184358.png
+    - https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813184413.png
+    - https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813184416.png
+    - https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813184439.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -483,7 +487,8 @@ tag_ui: # 留空或 index
 background:
 
 # Show the footer background image (same as top_img)
-footer_bg: false
+# footer_bg: false
+footer_bg: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813184434.png
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -609,7 +614,7 @@ aside:
       link: https://github.com/Leirss
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 感谢访问本网站，欢迎收藏😀
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -621,7 +626,7 @@ aside:
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: false
+    color: true
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -652,7 +657,7 @@ translate:
   # The text of a button
   default: 簡
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
-  defaultEncoding: 1
+  defaultEncoding: 2
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
