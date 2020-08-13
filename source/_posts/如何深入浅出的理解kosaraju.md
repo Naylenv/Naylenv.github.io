@@ -7,7 +7,6 @@ tags:
 	- 图论
 	- 程序设计思维实践
 categories: 
-	- 程序设计思维实践
 	- 图论
 keywords:
 	- 算法

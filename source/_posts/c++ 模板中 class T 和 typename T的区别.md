@@ -11,7 +11,7 @@ keywords:
 	- C++
 	- 程序设计思维实践
 description: 
-cover: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813190801.png
+cover: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813184439.png
 ---
 
 # c++ 模板中 `<class T>` 和 `<typename T>`的区别

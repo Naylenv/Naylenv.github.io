@@ -17,17 +17,17 @@ keywords:
 description: 
 cover: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813191444.png
 ---
-
+@[toc]
 # 写在前面
 
 整理了一份最小生成树算法板子
 
-# C - 掌握魔法の东东 I
+# 题目 C - 掌握魔法の东东 I
 
 东东在老家农村无聊，想种田。农田有$ n$ 块，编号从 1~$n$。种田要灌氵
 众所周知东东是一个魔法师，他可以消耗一定的 MP 在一块田上施展魔法，使得黄河之水天上来。他也可以消耗一定的 MP 在两块田的渠上建立传送门，使得这块田引用那块有水的田的水。 $(1 \le n \le 3e2)$
-黄河之水天上来的消耗是$ W_i$，$i$ 是农田编号 $(1 \le W_i \le 1e5)$
-建立传送门的消耗是 $P_{ij}$，$i$、$j $是农田编号 $(1 \le P_{ij}  \le 1e5, P_{ij} = P_{ji}, P_{ii} =0)$
+黄河之水天上来的消耗是$W_i$，$i$ 是农田编号 $(1 \le W_i \le 1e5)$
+建立传送门的消耗是 $P_{ij}$，$i$、$j$是农田编号 $(1 \le P_{ij}  \le 1e5, P_{ij} = P_{ji}, P_{ii} =0)$
 东东为所有的田灌氵的最小消耗
 
 ## input
@@ -60,7 +60,7 @@ cover: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813191444.png
 9
 ```
 
-# kruskal 
+# Kruskal 
 
 复杂度$O(mlogm)$
 
@@ -108,7 +108,7 @@ int main() {
 }
 ```
 
-# dijskra
+# Prim(Dijkstra)
 
 复杂度$O(n^2)$
 
@@ -151,9 +151,9 @@ int main() {
 }
 ```
 
-# 堆优化的dijstra
+# 堆优化的Prim
 
-复杂度$O((m+n)logn)$，该题邻接矩阵为时间复杂度为$O(nlogn )$
+复杂度$O((m+n)logn)$，若采用邻接矩阵存图时间复杂度为$O(nlogn )$
 
 ```cpp
 const int MAXN = 3e2 + 7;
@@ -199,3 +199,6 @@ int main() {
 }
 ```
 
+# 时间效率对比
+从上至下依次为堆优化的Prim，Prim，Kruskal：
+![从上至下依次为堆优化的Prim，Prim，Kruskal](https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813192903.png)
