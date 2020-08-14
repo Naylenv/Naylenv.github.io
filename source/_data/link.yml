@@ -1,0 +1,52 @@
+- class_name: 我的Blog
+  link_list:
+    - name: github.io
+      link: http://leirss.github.io/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814161825.png
+    - name: csdn
+      link: https://blog.csdn.net/Aloneingchild
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814161853.png
+
+- class_name: 友情链接
+  # class_desc: 那些人，那些事
+  link_list:
+    - name: qer
+      link: http://qerlovelife.xyz/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814161435.png
+      # descr: 今日事,今日毕
+    - name: Stbyu
+      link: https://stbyu.github.io/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814161533.png
+      # descr: 快速、简单且强大的网誌框架
+    - name: yhf2000
+      link: https://yhf2000.cn/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20170922103323_Fyh3C.jpeg
+    - name: xty
+      link: http://xty.im/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/QQ%E5%9B%BE%E7%89%8720200814163828.jpg
+      # descr: 快速、简单且强大的网誌框架
+
+
+# - class_name: 网站
+#   class_desc: 值得推荐的网站
+#   link_list:
+#     - name: Youtube
+#       link: https://www.youtube.com/
+#       avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
+#       descr: 视频网站
+#     - name: Weibo
+#       link: https://www.weibo.com/
+#       avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
+#       descr: 中国最大社交分享平台
+#     - name: Twitter
+#       link: https://twitter.com/
+#       avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
+#       descr: 社交分享平台
+# Flink:
+#   headline: 友情链接
+#   info_headline: 我的Blog资料
+#   name: Blog 名字： JerryC
+#   address: Blog 地址： https://jerryc.me/
+#   avatar: Blog 头像：https://jerryc.me/img/avatar.png
+#   info: Blog 简介： 今日事,今日毕
+#   comment: 如果需要交换友链,请留言

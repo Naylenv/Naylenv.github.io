@@ -5,7 +5,7 @@
 # Site
 title: Anadem's Blog
 subtitle: '摸🐟'
-description: '哈哈哈哈哈'
+description: 'Student from SDU'
 keywords: [算法, 数据结构, Django, 后端, 图形学, 机器学习]
 author: Anadem
 language: zh-CN
@@ -114,3 +114,8 @@ markdown_it_plus:
       enable: true
       options:
         strict: false
+
+search:
+  path: search.xml
+  field: post
+  content: true
