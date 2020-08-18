@@ -24,6 +24,19 @@
     - name: xty
       link: http://xty.im/
       avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/QQ%E5%9B%BE%E7%89%8720200814163828.jpg
+    - name: Eric
+      link: https://eirc-whyte.github.io/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814230654.png
+    - name: BoJack
+      link: https://bojack.space/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/%E8%91%AB%E8%8A%A6%E5%A8%83.jpg
+    - name: Zhang T
+      link: https://zhangt.top/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200815202243.png
+      # descr: 快速、简单且强大的网誌框架
+    - name: mrning
+      link: https://blog.mrning.com/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/QQ%E5%9B%BE%E7%89%8720200815212927.jpg
       # descr: 快速、简单且强大的网誌框架
 
 
