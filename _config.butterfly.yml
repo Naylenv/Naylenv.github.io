@@ -610,9 +610,9 @@ aside:
   enable: true
   mobile: true # display on mobile
   position: right # left or right
-  card_author:
+  card_author: 
     enable: true
-    description:
+    description: 
     button:
       icon: fab fa-github
       text: Follow Me

@@ -153,7 +153,7 @@ int main() {
 
 # 堆优化的Prim
 
-复杂度$O((m+n)logn)$，若采用邻接矩阵存图时间复杂度为$O(nlogn )$
+复杂度$O((m+n)logn)$，若采用邻接矩阵存图时间复杂度为$O(nlogn)$
 
 ```cpp
 const int MAXN = 3e2 + 7;

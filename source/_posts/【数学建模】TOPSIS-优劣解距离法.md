@@ -8,6 +8,7 @@ categories:
     - 数学建模
 keywords:
     - 数学建模
+    - TOPSIS
 description:
 cover: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200819000754.png
 ---
