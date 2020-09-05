@@ -409,9 +409,9 @@
       
         <tags>
             
-            <tag> Ubuntu </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Ubuntu </tag>
             
         </tags>
       
@@ -778,13 +778,13 @@
       
         <tags>
             
-            <tag> Ubuntu </tag>
-            
-            <tag> conda </tag>
+            <tag> tmux </tag>
             
             <tag> Linux </tag>
             
-            <tag> tmux </tag>
+            <tag> Ubuntu </tag>
+            
+            <tag> conda </tag>
             
             <tag> zsh </tag>
             
@@ -811,9 +811,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> tmux </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       

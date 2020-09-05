@@ -4470,7 +4470,7 @@ img {
   background: var(--btn-hover-color);
 }
 #vcomment textarea {
-  background: url("/img/bg_Q.png") 100% 100% no-repeat;
+  background: url("https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/bg_Q.png") 100% 100% no-repeat;
 }
 #vcomment .vimg {
   -webkit-transition: all 0.3s;
