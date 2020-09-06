@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>【数学建模】聚类模型 - K-means &amp; 系统（层次）算法</title>
+      <link href="/2020/09/06/%E3%80%90%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E3%80%91%E8%81%9A%E7%B1%BB%E6%A8%A1%E5%9E%8B-K-means-%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%B1%82%E6%AC%A1%EF%BC%89%E7%AE%97%E6%B3%95/"/>
+      <url>/2020/09/06/%E3%80%90%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E3%80%91%E8%81%9A%E7%B1%BB%E6%A8%A1%E5%9E%8B-K-means-%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%B1%82%E6%AC%A1%EF%BC%89%E7%AE%97%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="聚类和分类的区别"><a class="markdownIt-Anchor" href="#聚类和分类的区别"></a> 聚类和分类的区别</h1><p>聚类是不知道类别，自己分类</p><p>分类是已知类别的</p><h1 id="聚类模型"><a class="markdownIt-Anchor" href="#聚类模型"></a> 聚类模型</h1><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906102956654.png" alt="" /></p><h1 id="k-means聚类"><a class="markdownIt-Anchor" href="#k-means聚类"></a> K-means聚类</h1><blockquote><p>数据对象即样本</p><p>聚类中心即重心</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906103044052.png" alt="" /></p><p><strong>PS：和我们初始化选择的中心有很大关系</strong></p><h2 id="如何写在论文里"><a class="markdownIt-Anchor" href="#如何写在论文里"></a> 如何写在论文里</h2><blockquote><p>因为算法步骤太长了，而且易被查重</p></blockquote><p>因为算法太长了，放流程图：</p><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906103629642.png" alt="一样的意思，但是更让人喜欢" /></p><h2 id="优缺点"><a class="markdownIt-Anchor" href="#优缺点"></a> 优缺点：</h2><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906103719030.png" alt="" /></p><h1 id="改进-k-means算法"><a class="markdownIt-Anchor" href="#改进-k-means算法"></a> 改进 K-means++算法</h1><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906103837670.png" alt="" /></p><h2 id="k值这么定量纲不一样怎么办"><a class="markdownIt-Anchor" href="#k值这么定量纲不一样怎么办"></a> K值这么定，量纲不一样怎么办？</h2><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906105112225.png" alt="" /></p><h1 id="不需要指定k的算法系统层次算法"><a class="markdownIt-Anchor" href="#不需要指定k的算法系统层次算法"></a> 不需要指定K的算法：系统（层次）算法</h1><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906105928985.png" alt="" /></p><h2 id="样本和样本直接的距离如何计算"><a class="markdownIt-Anchor" href="#样本和样本直接的距离如何计算"></a> 样本和样本直接的距离如何计算</h2><h3 id="样本和样本之间的距离"><a class="markdownIt-Anchor" href="#样本和样本之间的距离"></a> 样本和样本之间的距离</h3><blockquote><p>绝对值距离和欧式距离最常用</p><p>绝对值距离更多的用于网状数据</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906111013007.png" alt="" /></p><h3 id="指标和指标之间的距离不常用-用于指标分类"><a class="markdownIt-Anchor" href="#指标和指标之间的距离不常用-用于指标分类"></a> 指标和指标之间的距离（不常用、用于指标分类）</h3><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906111149539.png" alt="指标分类，不常用" /></p><h3 id="类与类之间的距离"><a class="markdownIt-Anchor" href="#类与类之间的距离"></a> 类与类之间的距离</h3><blockquote><p>因为样本和样本被划分为不同的类，就被划分到不同的类了</p><p>组间、组内用的多</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906111334490.png" alt="" /></p><h2 id="系统聚类的流程图"><a class="markdownIt-Anchor" href="#系统聚类的流程图"></a> 系统聚类的流程图</h2><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906111652432.png" alt="流程图" /></p><h2 id="需要注意的问题"><a class="markdownIt-Anchor" href="#需要注意的问题"></a> 需要注意的问题：</h2><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906112249195.png" alt="" /></p><h1 id="有没有算法能帮助我们确定k的值肘部法则"><a class="markdownIt-Anchor" href="#有没有算法能帮助我们确定k的值肘部法则"></a> 有没有算法能帮助我们确定k的值：肘部法则</h1><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906113001015.png" alt="" /></p><h2 id="论文里如何解释"><a class="markdownIt-Anchor" href="#论文里如何解释"></a> 论文里如何解释？</h2><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200906113700284.png" alt="" /></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学建模 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学建模 </tag>
+            
+            <tag> 聚类模型 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【数学建模】分类模型</title>
       <link href="/2020/09/06/%E3%80%90%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E3%80%91%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/"/>
       <url>/2020/09/06/%E3%80%90%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E3%80%91%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/</url>
