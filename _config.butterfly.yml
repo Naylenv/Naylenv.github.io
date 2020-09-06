@@ -86,11 +86,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/GULULU.png
+favicon: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/GULULU.png
 
 # Avatar (頭像)
 avatar:
-  img: /img/Kirito.png
+  img: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/Kirito.png
   effect: false
 
 # the banner image of home page
@@ -316,7 +316,7 @@ valine:
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: /img/bg_Q.png # valine background
+  bg: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/bg_Q.png # valine background
   emojiCDN: # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
