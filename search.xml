@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>【数学建模】因子分析</title>
+      <link href="/2020/09/09/%E3%80%90%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E3%80%91%E5%9B%A0%E5%AD%90%E5%88%86%E6%9E%90/"/>
+      <url>/2020/09/09/%E3%80%90%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E3%80%91%E5%9B%A0%E5%AD%90%E5%88%86%E6%9E%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="因子分析模型"><a class="markdownIt-Anchor" href="#因子分析模型"></a> 因子分析模型</h1><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909104908688.png" alt="" /></p><h2 id="因子分析和主成分分析的对比"><a class="markdownIt-Anchor" href="#因子分析和主成分分析的对比"></a> 因子分析和主成分分析的对比</h2><blockquote><p>因子分析结果不是唯一的，主成分分析是唯一的</p><p>主成分分析能做的因子分析都能做</p><p>且因子分析更容易解释，因此因子分析更加常用。</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909105722940.png" alt="" /></p><h1 id="原理"><a class="markdownIt-Anchor" href="#原理"></a> 原理：</h1><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909110529575.png" alt="" /></p><p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span>是均值</p><h1 id="参数估计spss的使用"><a class="markdownIt-Anchor" href="#参数估计spss的使用"></a> 参数估计（SPSS的使用）</h1><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909112139204.png" alt="" /></p><h1 id="因子旋转的方法更好解释因子含义"><a class="markdownIt-Anchor" href="#因子旋转的方法更好解释因子含义"></a> 因子旋转的方法（更好解释因子含义）</h1><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909112318115.png" alt="" /></p><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909112500443.png" alt="" /></p><blockquote><p>论文中使用的最多是最大方差法</p></blockquote><h1 id="因子得分"><a class="markdownIt-Anchor" href="#因子得分"></a> 因子得分</h1><blockquote><p>虽然和主成分分析很像，但并不一样</p><p>因子分析限制更多</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909112637056.png" alt="" /></p><h1 id="例子"><a class="markdownIt-Anchor" href="#例子"></a> 例子：</h1><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909113408718.png" alt="" /></p><h2 id="参数解释"><a class="markdownIt-Anchor" href="#参数解释"></a> 参数解释：</h2><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909113332757.png" alt="" /></p><h2 id="根据碎石图确定因子个数"><a class="markdownIt-Anchor" href="#根据碎石图确定因子个数"></a> 根据碎石图确定因子个数</h2><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909113851916.png" alt="" /></p><h2 id="小技巧标准化后的符号"><a class="markdownIt-Anchor" href="#小技巧标准化后的符号"></a> 小技巧：标准化后的符号：</h2><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909114543247.png" alt="" /></p><h2 id="因子分析和主成分分析一样不能用于综合评价"><a class="markdownIt-Anchor" href="#因子分析和主成分分析一样不能用于综合评价"></a> 因子分析和主成分分析一样，不能用于综合评价：</h2><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200909114644498.png" alt="" /></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学建模 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数学建模 </tag>
+            
+            <tag> 因子分析 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【数学建模】主成分分析</title>
       <link href="/2020/09/08/%E3%80%90%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E3%80%91%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90/"/>
       <url>/2020/09/08/%E3%80%90%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E3%80%91%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90/</url>
