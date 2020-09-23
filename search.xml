@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>【操作系统】中断 异常 陷入 程序调用 之间的关系</title>
+      <link href="/2020/09/23/%E3%80%90%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E3%80%91%E4%B8%AD%E6%96%AD-%E5%BC%82%E5%B8%B8-%E9%99%B7%E5%85%A5-%E7%A8%8B%E5%BA%8F%E8%B0%83%E7%94%A8-%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/"/>
+      <url>/2020/09/23/%E3%80%90%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E3%80%91%E4%B8%AD%E6%96%AD-%E5%BC%82%E5%B8%B8-%E9%99%B7%E5%85%A5-%E7%A8%8B%E5%BA%8F%E8%B0%83%E7%94%A8-%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言：</h1><p>关于终端、异常、陷入三者之间的关系，网上有很多种分类，很多种解释。</p><p>本文对三者关系的阐述根据山东大学杨兴强教授教授的操作系统时的思路整理。</p><h1 id="外部中断-异常-陷入"><a class="markdownIt-Anchor" href="#外部中断-异常-陷入"></a> 外部中断、异常、陷入：</h1><p>简单的来说，中断分为<strong>陷入、异常、外部中断（外部设备的中断）</strong>。即这三者统称为中断。</p><p>其中陷入、异常又称为内部中断。</p><h2 id="外部中断"><a class="markdownIt-Anchor" href="#外部中断"></a> 外部中断：</h2><p>最容易被混淆，我们平常所说的<strong>中断</strong>既指大概念上的中断，又指的外部中断，这个要根据上下文推断。</p><h2 id="异常"><a class="markdownIt-Anchor" href="#异常"></a> 异常：</h2><p>CPU执行时出错，发出中断。是被动发生中断事件。</p><h2 id="陷入"><a class="markdownIt-Anchor" href="#陷入"></a> 陷入</h2><p>CPU主动跳转，比如断点调试和trap指令。使程序主动进入某一条指令流。</p><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200923204042213.png" alt="不同类型中断事件的比较" /></p><p><img src= "/img/loading.gif" data-lazy-src="https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/image-20200923204435951.png" alt="中断响应过程" /></p><h2 id="内部-外部的关系"><a class="markdownIt-Anchor" href="#内部-外部的关系"></a> 内部、外部的关系？</h2><p>内部中断指的是CPU自身产生的中断。</p><p>外部中断指的外设产生的中断。</p><h1 id="中断和程序调用的区别"><a class="markdownIt-Anchor" href="#中断和程序调用的区别"></a> 中断和程序调用的区别</h1><ul><li><p>中断是CPU从执行某一程序流到执行另一程序流的过程。也就是从执行程序A到执行程序B，换了一个程序。</p></li><li><p>程序调用则不是这样，他还是在执行同一程序，可能是发生子函数调用等事件。</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 操作系统 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 操作系统 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Win 下 VSCode 配置 LaTeX format 自动格式化</title>
       <link href="/2020/09/21/Win-%E4%B8%8B-VSCode-%E9%85%8D%E7%BD%AE-LaTeX-format-%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
       <url>/2020/09/21/Win-%E4%B8%8B-VSCode-%E9%85%8D%E7%BD%AE-LaTeX-format-%E8%87%AA%E5%8A%A8%E6%A0%BC%E5%BC%8F%E5%8C%96/</url>
@@ -804,31 +829,6 @@
     
     
     <entry>
-      <title>.git 文件过大 - 减小 .git 文件体积</title>
-      <link href="/2020/03/20/git%E6%96%87%E4%BB%B6%E8%BF%87%E5%A4%A7/"/>
-      <url>/2020/03/20/git%E6%96%87%E4%BB%B6%E8%BF%87%E5%A4%A7/</url>
-      
-        <content type="html"><![CDATA[<h1 id="git-文件过大"><a class="markdownIt-Anchor" href="#git-文件过大"></a> .git 文件过大</h1><h1 id="综述"><a class="markdownIt-Anchor" href="#综述"></a> 综述</h1><p>最近发现<code>github</code>上项目<code>.git</code>文件已经达到了2个G，整理了减小<code>.git</code>文件的方法。</p><h2 id="git文件是什么"><a class="markdownIt-Anchor" href="#git文件是什么"></a> .git文件是什么</h2><p>一个管理git仓库的文件夹，这里包含所有git操作所需要的东西</p><h1 id="方法"><a class="markdownIt-Anchor" href="#方法"></a> 方法</h1><h2 id="简单有效减小体积"><a class="markdownIt-Anchor" href="#简单有效减小体积"></a> 简单有效，减小体积</h2><p>运行 <code>gc</code> ，生成 <code>pack</code> 文件（后面的 <code>--prune=now</code> 表示对之前的所有提交做修剪，有的时候仅仅 <code>gc</code> 一下<code>.git</code> 文件就会小很多）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git gc --prune=now</span><br></pre></td></tr></table></figure><h2 id="克隆时只克隆一层"><a class="markdownIt-Anchor" href="#克隆时只克隆一层"></a> 克隆时只克隆一层</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone --depth=1</span><br></pre></td></tr></table></figure><h2 id="使用git-lfs管理文件"><a class="markdownIt-Anchor" href="#使用git-lfs管理文件"></a> 使用<code>git-lfs</code>管理文件</h2><p>项目中有大量的图片文件，音频文件，<strong>二进制</strong>文件时，推荐使用第三方扩展插件<code>git-lfs</code>。</p><p>它将你所标记的大文件保存至另外的仓库,而在主仓库仅保留其轻量级指针</p><h3 id="why"><a class="markdownIt-Anchor" href="#why"></a> why?</h3><p>二进制内容比较难压缩, 会导致整个仓库占用的空间飞速增长. 没多久你可能就会发现，10M的文件，100M的<code>.git</code>文件。也就是不能版本比较。</p><h3 id="getting-started"><a class="markdownIt-Anchor" href="#getting-started"></a> Getting Started</h3><p>安装完成后在<code>git bash</code>中运行如下指令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git lfs install</span><br></pre></td></tr></table></figure><h3 id="添加你要管理的文件"><a class="markdownIt-Anchor" href="#添加你要管理的文件"></a> 添加你要管理的文件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git lfs track &quot;*.png&quot;</span><br><span class="line">git lfs track &quot;*.jpg&quot;</span><br><span class="line">git lfs track &quot;*.mp3&quot;</span><br><span class="line">git lfs track &quot;*.pyc&quot;</span><br></pre></td></tr></table></figure><h3 id="添加gitattributes"><a class="markdownIt-Anchor" href="#添加gitattributes"></a> 添加<code>.gitattributes</code></h3><p>该文件保存了文件的追踪记录</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .gitattributes</span><br></pre></td></tr></table></figure><h3 id="愉快的使用"><a class="markdownIt-Anchor" href="#愉快的使用"></a> 愉快的使用</h3><p>进行完上述处理，后面就和正常<code>git</code>一样了。不会再有多余的步骤，正常<code>add,commit,push,pull,clone</code>即可</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add file.psd</span><br><span class="line">git commit -m &quot;Add design file&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><h3 id="官网连接"><a class="markdownIt-Anchor" href="#官网连接"></a> 官网连接</h3><p><a href="https://git-lfs.github.com/">git-lfs官网</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Git </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>【最小生成树】Kruskal - Prim - 堆优化的Prim</title>
       <link href="/2020/03/20/kruskal%20-%20dijskra%20-%20%E5%A0%86%E4%BC%98%E5%8C%96%E7%9A%84%20dijskra/"/>
       <url>/2020/03/20/kruskal%20-%20dijskra%20-%20%E5%A0%86%E4%BC%98%E5%8C%96%E7%9A%84%20dijskra/</url>
@@ -852,6 +852,31 @@
             <tag> 图论 </tag>
             
             <tag> 程序设计思维时间 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>.git 文件过大 - 减小 .git 文件体积</title>
+      <link href="/2020/03/20/git%E6%96%87%E4%BB%B6%E8%BF%87%E5%A4%A7/"/>
+      <url>/2020/03/20/git%E6%96%87%E4%BB%B6%E8%BF%87%E5%A4%A7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="git-文件过大"><a class="markdownIt-Anchor" href="#git-文件过大"></a> .git 文件过大</h1><h1 id="综述"><a class="markdownIt-Anchor" href="#综述"></a> 综述</h1><p>最近发现<code>github</code>上项目<code>.git</code>文件已经达到了2个G，整理了减小<code>.git</code>文件的方法。</p><h2 id="git文件是什么"><a class="markdownIt-Anchor" href="#git文件是什么"></a> .git文件是什么</h2><p>一个管理git仓库的文件夹，这里包含所有git操作所需要的东西</p><h1 id="方法"><a class="markdownIt-Anchor" href="#方法"></a> 方法</h1><h2 id="简单有效减小体积"><a class="markdownIt-Anchor" href="#简单有效减小体积"></a> 简单有效，减小体积</h2><p>运行 <code>gc</code> ，生成 <code>pack</code> 文件（后面的 <code>--prune=now</code> 表示对之前的所有提交做修剪，有的时候仅仅 <code>gc</code> 一下<code>.git</code> 文件就会小很多）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git gc --prune=now</span><br></pre></td></tr></table></figure><h2 id="克隆时只克隆一层"><a class="markdownIt-Anchor" href="#克隆时只克隆一层"></a> 克隆时只克隆一层</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone --depth=1</span><br></pre></td></tr></table></figure><h2 id="使用git-lfs管理文件"><a class="markdownIt-Anchor" href="#使用git-lfs管理文件"></a> 使用<code>git-lfs</code>管理文件</h2><p>项目中有大量的图片文件，音频文件，<strong>二进制</strong>文件时，推荐使用第三方扩展插件<code>git-lfs</code>。</p><p>它将你所标记的大文件保存至另外的仓库,而在主仓库仅保留其轻量级指针</p><h3 id="why"><a class="markdownIt-Anchor" href="#why"></a> why?</h3><p>二进制内容比较难压缩, 会导致整个仓库占用的空间飞速增长. 没多久你可能就会发现，10M的文件，100M的<code>.git</code>文件。也就是不能版本比较。</p><h3 id="getting-started"><a class="markdownIt-Anchor" href="#getting-started"></a> Getting Started</h3><p>安装完成后在<code>git bash</code>中运行如下指令</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git lfs install</span><br></pre></td></tr></table></figure><h3 id="添加你要管理的文件"><a class="markdownIt-Anchor" href="#添加你要管理的文件"></a> 添加你要管理的文件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git lfs track &quot;*.png&quot;</span><br><span class="line">git lfs track &quot;*.jpg&quot;</span><br><span class="line">git lfs track &quot;*.mp3&quot;</span><br><span class="line">git lfs track &quot;*.pyc&quot;</span><br></pre></td></tr></table></figure><h3 id="添加gitattributes"><a class="markdownIt-Anchor" href="#添加gitattributes"></a> 添加<code>.gitattributes</code></h3><p>该文件保存了文件的追踪记录</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .gitattributes</span><br></pre></td></tr></table></figure><h3 id="愉快的使用"><a class="markdownIt-Anchor" href="#愉快的使用"></a> 愉快的使用</h3><p>进行完上述处理，后面就和正常<code>git</code>一样了。不会再有多余的步骤，正常<code>add,commit,push,pull,clone</code>即可</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add file.psd</span><br><span class="line">git commit -m &quot;Add design file&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><h3 id="官网连接"><a class="markdownIt-Anchor" href="#官网连接"></a> 官网连接</h3><p><a href="https://git-lfs.github.com/">git-lfs官网</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
             
         </tags>
       
