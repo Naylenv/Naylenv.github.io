@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Anadem's Blog
+title: Naylen's Blog
 subtitle: '摸🐟'
 description: 'Student from SDU'
 keywords: [算法, 数据结构, Django, 后端, 图形学, 机器学习]
-author: Anadem
+author: Naylen
 language: zh-CN
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://leirss.github.io/
+url: https://naylenv.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -104,7 +104,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/Leirss/Leirss.github.io
+  repository: https://github.com/Naylenv/Naylenv.github.io
   branch: master
 
 markdown_it_plus:
