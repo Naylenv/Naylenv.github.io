@@ -1,7 +1,7 @@
 - class_name: 我的Blog
   link_list:
     - name: github.io
-      link: http://leirss.github.io/
+      link: http://naylenv.github.io/
       avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814161825.png
     - name: csdn
       link: https://blog.csdn.net/Aloneingchild
