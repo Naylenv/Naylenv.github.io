@@ -1,7 +1,7 @@
 ---
 title: terminal shell tty console 的区别
-date: 2021-04-02 16:44:28
-updated: 2021-04-02 16:44:28
+date: 2020-09-25 09:25:08
+updated: 2020-09-25 09:25:08
 tags:
     - 操作系统
 categories:
