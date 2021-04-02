@@ -98,13 +98,13 @@ avatar:
   effect: false
 
 # Disable all banner image
-disable_top_img: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813192128.png
+disable_top_img: false
 
 # The banner image of home page
 index_img:
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813192128.png
 
 # The banner image of archive page
 archive_img:
