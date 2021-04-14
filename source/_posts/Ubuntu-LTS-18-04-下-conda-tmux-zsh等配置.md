@@ -1,7 +1,7 @@
 ---
 title: Ubuntu LTS 18.04 下 conda tmux zsh等配置
 date: 2020-02-23 00:36:28
-updated: 2020-02-23 00:36:28
+updated: 2021-04-11 02:23:28
 tags:
     - Ubuntu
     - conda
@@ -66,6 +66,9 @@ sudo do-release-upgrade: # 进行系统版本的升级(Ubuntu版本的升级)，
 ```
 
 ## zsh
+### gittee加速
+[oh-my-zsh 国内安装及配置](https://blog.csdn.net/qwe641259875/article/details/107201760/)
+[极其舒爽的zsh配置（使用gitee镜像飞速下载）](https://blog.csdn.net/qq_41996454/article/details/102640653)
 ### 安装并替换
 ```shell
 sudo apt install zsh
