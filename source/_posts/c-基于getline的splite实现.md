@@ -8,8 +8,7 @@ keywords:
   - C++
 date: 2021-05-10 16:31:07
 updated: 2021-05-10 16:31:07
-cover:
-  - https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20210510165035.png
+cover: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20210510165035.png
 ---
 # 前言
 C++ 作为老大哥竟然一直不支持 split ，在看程设模拟的时候发现了可以通过 getline 优雅的实现 split。
