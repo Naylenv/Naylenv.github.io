@@ -1468,6 +1468,31 @@
     
     
     <entry>
+      <title>Django Filefield 保存用户上传文件</title>
+      <link href="/2020/02/25/Django-Filefield-%E4%BF%9D%E5%AD%98%E7%94%A8%E6%88%B7%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/"/>
+      <url>/2020/02/25/Django-Filefield-%E4%BF%9D%E5%AD%98%E7%94%A8%E6%88%B7%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="django-filefield-保存用户上传文件"><a class="markdownIt-Anchor" href="#django-filefield-保存用户上传文件"></a> Django Filefield 保存用户上传文件</h1><p>网上关于<code>Django</code> <code>Filefield</code> 的文章很少。<br />今天踩了踩坑，给了一套<code>Filefiled</code>上传保存文件的方法。<br />跟一般web开发一样，上传的文件保存在请求体的某个字段中，通常为<code>file</code>字段<br />在<code>views.py</code>中，可以这样获得上传的文件</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># view.py</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">post</span>(<span class="params">self, request</span>):</span></span><br><span class="line">avatar = request.FILES.get(<span class="string">&quot;file&quot;</span>)</span><br></pre></td></tr></table></figure><p>这样<code>avatar</code>就存储了上传的文件，保存其实有很简单的方法，<code>django</code>替你封装好了：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># view.py</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">post</span>(<span class="params">self, request</span>):</span></span><br><span class="line">    <span class="keyword">import</span> datetime</span><br><span class="line">    user.avatar.save(<span class="string">&quot;&#123;&#125;_&#123;&#125;.jpg&quot;</span>.<span class="built_in">format</span>(user.<span class="built_in">id</span>,  datetime.datetime.now().strftime(<span class="string">&#x27;%Y-%m-%d&#x27;</span>)), avatar)</span><br><span class="line">    user.save()</span><br></pre></td></tr></table></figure><p>这里顺便对保存的数据进行了格式转化，调用了<code>python</code>的<code>datatime</code>包，当然调用<code>time</code>包或者<code>Django</code>的<code>timezone</code>包也是一样的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Django </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Django </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MIPS - 反汇编 - 拆炸弹 - bomb</title>
       <link href="/2020/02/23/MIPS-%E5%8F%8D%E6%B1%87%E7%BC%96-%E6%8B%86%E7%82%B8%E5%BC%B9-bomb/"/>
       <url>/2020/02/23/MIPS-%E5%8F%8D%E6%B1%87%E7%BC%96-%E6%8B%86%E7%82%B8%E5%BC%B9-bomb/</url>
