@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>c++基于getline的split实现</title>
+      <link href="/2021/05/10/c-%E5%9F%BA%E4%BA%8Egetline%E7%9A%84splite%E5%AE%9E%E7%8E%B0/"/>
+      <url>/2021/05/10/c-%E5%9F%BA%E4%BA%8Egetline%E7%9A%84splite%E5%AE%9E%E7%8E%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1><p>C++ 作为老大哥竟然一直不支持split，在看程设模拟的时候发现了可以通过getline优雅的实现split</p><h1 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">vector&lt;string&gt; <span class="title">split</span><span class="params">(<span class="keyword">const</span> string&amp; s, <span class="keyword">char</span> c)</span> </span>&#123;  <span class="comment">//分隔文件名</span></span><br><span class="line">    vector&lt;string&gt; res;</span><br><span class="line">    string tmp;</span><br><span class="line">    <span class="function">stringstream <span class="title">ss</span><span class="params">(s)</span></span>;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">getline</span>(ss, tmp, c)) res.<span class="built_in">push_back</span>(tmp);  <span class="comment">//res保存整体</span></span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// std::vector&lt;std::string&gt; split(const std::string&amp; line, char c) &#123;</span></span><br><span class="line"><span class="comment">//     std::stringstream stm(line);</span></span><br><span class="line"><span class="comment">//     std::vector&lt;std::string&gt; ans;</span></span><br><span class="line"><span class="comment">//     std::string tmp;</span></span><br><span class="line"><span class="comment">//     while (std::getline(stm, tmp, c)) ans.push_back(tmp);</span></span><br><span class="line"><span class="comment">//     return ans;</span></span><br><span class="line"><span class="comment">// &#125;</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// ios::sync_with_stdio(false);</span></span><br><span class="line">    <span class="comment">// cout.tie(NULL);</span></span><br><span class="line">    string s;</span><br><span class="line">    <span class="keyword">while</span> (cin &gt;&gt; s) &#123;</span><br><span class="line">        vector&lt;string&gt; V = <span class="built_in">split</span>(s, <span class="string">&#x27;/&#x27;</span>);</span><br><span class="line">        cout &lt;&lt; V.<span class="built_in">size</span>() &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; it : V) &#123;</span><br><span class="line">            cout &lt;&lt; it &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        cout &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="input"><a class="markdownIt-Anchor" href="#input"></a> input</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a&#x2F;bb&#x2F;cc</span><br><span class="line">a&#x2F;bb&#x2F;cc&#x2F;</span><br><span class="line">a&#x2F;bb&#x2F;cc-c&#x2F;&#x2F;c</span><br></pre></td></tr></table></figure><h2 id="output"><a class="markdownIt-Anchor" href="#output"></a> output</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">3 a bb cc </span><br><span class="line">3 a bb cc </span><br><span class="line">5 a bb cc-c  c </span><br></pre></td></tr></table></figure><h1 id="解释"><a class="markdownIt-Anchor" href="#解释"></a> 解释</h1><p><code>basic_istream&amp; getline( char_type* s, std::streamsize count, char_type delim );</code></p><p>从流释出字符，直至<strong>行尾</strong>或<strong>指定的分隔符</strong> <code>delim</code> 。</p><p>参考链接：</p><p><a href="https://zh.cppreference.com/w/cpp/io/basic_istream/getline">cppreference</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在64位Linux环境中运行Nachos3.4</title>
       <link href="/2021/03/31/%E5%9C%A864%E4%BD%8DLinux%E7%8E%AF%E5%A2%83%E4%B8%AD%E8%BF%90%E8%A1%8CNachos3-4/"/>
       <url>/2021/03/31/%E5%9C%A864%E4%BD%8DLinux%E7%8E%AF%E5%A2%83%E4%B8%AD%E8%BF%90%E8%A1%8CNachos3-4/</url>
