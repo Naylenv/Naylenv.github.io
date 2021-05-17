@@ -1,7 +1,7 @@
 ---
 title: Ubuntu LTS 18.04 下 conda tmux zsh等配置
 date: 2020-02-23 00:36:28
-updated: 2021-04-11 02:23:28
+updated: 2021-05-15 20:23:28
 tags:
     - Ubuntu
     - conda
@@ -20,7 +20,6 @@ keywords:
 description:
 cover: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200813221115.png
 ---
-
 # 一个新的Ubuntu LTS 18.04 conda tmux zsh等配置
 最近阿里云给出免费6个月2H4G服务器活动，领了一个并简单配置了一下。
 相较于apt-get更推荐apt，它集合了apt-get，更新，更便捷。
@@ -167,9 +166,16 @@ source-file ~/.tmux.conf
 git config --global credential.helper store
 ```
 
-## 配置免密登入
+## 配置免密登入（法1）
 + 在win系统下找到用户目录的`.ssh`文件夹，将`id_rsa.pub`复制一份命名为`authorized_keys`
 + 将`authorized_keys`发送到ubuntu 根目录下的 `.ssh`中，若没有，则创建。
 
 [ssh免密登陆失败原因总结（Linux）](https://blog.csdn.net/zhangmingcai/article/details/95734889)
 
+## 配置免密登入（法2）
+在终端中输入如下命令（Win下可用Git Bash）
+```shell
+ssh-keygen -t rsa -b 4096 
+# 一路回车
+ssh-copy-id 用户名@服务器地址
+```
