@@ -7,13 +7,23 @@
       link: https://blog.csdn.net/Aloneingchild
       avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814161853.png
 
-- class_name: 友情链接
+- class_name: 互关
   # class_desc: 那些人，那些事
   link_list:
-    - name: qer
-      link: http://qerlovelife.xyz/
-      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814161435.png
-      # descr: 今日事,今日毕
+    - name: Eric
+      link: https://eirc-whyte.github.io/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814230654.png
+    - name: Lilian
+      link: https://liliyae.github.io/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20211029105155.png
+    - name: mrning
+      link: https://blog.mrning.com/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/QQ%E5%9B%BE%E7%89%8720200815212927.jpg
+      # descr: 快速、简单且强大的网誌框架
+
+- class_name: 我关注的
+  # class_desc: 那些人，那些事
+  link_list:
     - name: Stbyu
       link: https://stbyu.github.io/
       avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814161533.png
@@ -24,22 +34,21 @@
     - name: xty
       link: http://xty.im/
       avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/QQ%E5%9B%BE%E7%89%8720200814163828.jpg
-    - name: Eric
-      link: https://eirc-whyte.github.io/
-      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814230654.png
-    - name: BoJack
-      link: https://bojack.space/
-      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/%E8%91%AB%E8%8A%A6%E5%A8%83.jpg
     - name: Zhang T
       link: https://zhangt.top/
       avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200815202243.png
       # descr: 快速、简单且强大的网誌框架
-    - name: mrning
-      link: https://blog.mrning.com/
-      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/QQ%E5%9B%BE%E7%89%8720200815212927.jpg
+- class_name: 主页挂掉了的（麻烦催更）
+  # class_desc: 那些人，那些事
+  link_list:
+    - name: qer
+      link: http://qerlovelife.xyz/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/20200814161435.png
+      # descr: 今日事,今日毕 
+    - name: BoJack
+      link: https://bojack.space/
+      avatar: https://blog-img-lei.oss-cn-beijing.aliyuncs.com/img/%E8%91%AB%E8%8A%A6%E5%A8%83.jpg
       # descr: 快速、简单且强大的网誌框架
-
-
 # - class_name: 网站
 #   class_desc: 值得推荐的网站
 #   link_list:
